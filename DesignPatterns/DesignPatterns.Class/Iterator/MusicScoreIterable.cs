@@ -9,5 +9,6 @@ namespace DesignPatterns.Class.Iterator
     {
 
         NoteIterator CreateNoteIterator();
+        NoteIterator CreateWhiteNoteIterator();
     }
 }

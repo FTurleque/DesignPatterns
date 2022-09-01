@@ -5,9 +5,9 @@
         private MusicScore notes;
         private int currentPosition;
 
-        public NoteScoreIterator(MusicScore notes)
+        public NoteScoreIterator(MusicScore _notes)
         {
-            this.notes = notes;
+            this.notes = _notes;
             currentPosition = 0;
         }
 

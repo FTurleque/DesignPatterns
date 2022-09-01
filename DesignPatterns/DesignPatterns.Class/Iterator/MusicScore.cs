@@ -79,5 +79,10 @@
         {
             return new NoteScoreIterator(this);
         }
+
+        public NoteIterator CreateWhiteNoteIterator()
+        {
+            return new WhiteNoteIterator(this);
+        }
     }
 }
