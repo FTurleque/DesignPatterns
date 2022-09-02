@@ -9,18 +9,33 @@ namespace DesignPatterns.Class.Iterator
     {
         private MusicScore notes;
         private int currentPosition;
+        private string searchPattern;
 
-        public WhiteNoteIterator(MusicScore _notes)
+        public WhiteNoteIterator(MusicScore _notes, string _searchPattern)
         {
             this.notes = _notes;
+            this.searchPattern = _searchPattern;
             currentPosition = 0;
         }
 
-        public Note Current { get; private set; }
+        public Note Current {
+            get 
+            {
+                return notes[currentPosition].Duration == searchPattern ? notes[currentPosition] : null;
+            }
+        }
 
         public Note GetNext()
         {
-            return HasMore() ? notes[++currentPosition] : default;
+            if (currentPosition + 1 < notes.Count && notes[currentPosition + 1].Duration == searchPattern)
+            {
+                return notes[++currentPosition];
+            }
+            else
+            {
+                ++currentPosition;
+                return  default;
+            }
         }
 
         public bool HasMore()

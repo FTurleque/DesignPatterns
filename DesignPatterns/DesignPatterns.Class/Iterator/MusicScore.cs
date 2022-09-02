@@ -25,11 +25,6 @@
 
         public int Count { get => notes.Count; }
 
-        public NoteIterator NoteIterator
-        {
-            get => CreateNoteIterator();
-        }
-
         public Note this[int i]
         {
             get 
@@ -82,7 +77,7 @@
 
         public NoteIterator CreateWhiteNoteIterator()
         {
-            return new WhiteNoteIterator(this);
+            return new WhiteNoteIterator(this, "Blanche");
         }
     }
 }
