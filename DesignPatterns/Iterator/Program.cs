@@ -4,9 +4,9 @@ using DesignPatterns.Class.Iterator;
 
 Note nDo = new Note("Do", "Noire");
 Note nRe = new Note("Re", "Croche");
-Note nMi = new Note("Mi", "Double_Croche");
+Note nMi = new Note("Mi", "Blanche");
 Note nFa = new Note("Fa", "Triple-Croche");
-Note nSol = new Note("Sol", "Blanche");
+Note nSol = new Note("Sol", "Double_Croche");
 Note nLa = new Note("La", "Ronde");
 Note nSi = new Note("Si", "Noire");
 
@@ -71,11 +71,11 @@ NoteIterator scoreIterator = myScore.CreateNoteIterator();
 Console.WriteLine("Itération de toutes les notes :\n");
 while (scoreIterator.HasMore())
 {
-    Console.WriteLine(scoreIterator.Current.Name);
+    Console.Write(scoreIterator.Current.Name + " ");
     scoreIterator.GetNext();
 }
 
-Console.WriteLine("===============================================================================\nItération de toutes les notes blanches\n");
+Console.WriteLine("\n===============================================================================\nItération de toutes les notes blanches\n");
 
 NoteIterator whiteNoteIterator = myScore.CreateWhiteNoteIterator();
 
