@@ -5,21 +5,22 @@ using System.Text;
 
 namespace DesignPatterns.Class.Iterator
 {
-    public class WhiteNoteIterator : NoteIterator
+    public class NoteIteratorExt : NoteIterator
     {
         private MusicScore notes;
         private int currentPosition;
         private string searchPattern;
 
-        public WhiteNoteIterator(MusicScore _notes, string _searchPattern)
+        public NoteIteratorExt(MusicScore notes, string searchPattern)
         {
-            this.notes = _notes;
-            this.searchPattern = _searchPattern;
-            currentPosition = IfGetCurrentIsPossible(0);
+            this.notes = notes;
+            this.currentPosition = IfGetCurrentIsPossible(0); 
+            this.searchPattern = searchPattern;
         }
 
-        public Note CurrentNote {
-            get 
+        public Note CurrentNote
+        {
+            get
             {
                 return notes[currentPosition];
             }

@@ -2,12 +2,9 @@
 {
     public class MusicScore : MusicScoreIterable
     {
-        private List<Note> notes;
+        private List<Note> notes = new List<Note>();
 
-        // Ex.
-        // Clé de Sol indique qu’une note placée sur la deuxième ligne est un Sol
-        // Clé d'Ut (Do) .....
-        // Clé de Fa .....
+        // Clé (de Sol indique qu’une note placée sur la deuxième ligne est un Sol)
         public string Key { get; set; }
 
         public string Title { get; set; }
@@ -27,15 +24,20 @@
 
         public Note this[int i]
         {
-            get 
+            get
             {
                 if (i < Count)
                 {
                     return notes[i];
                 }
                 return null;
+                // TODO : Gérer le null exception.
+                /*if (i > Count - 1)
+                {
+                    throw new ArgumentOutOfRangeException("Hors Limites");
+                }
+                return notes[i];*/
             }
-            set => notes[i] = value;
         }
 
         public MusicScore(string _key, string _title, string _autor, int _tempo)
@@ -67,17 +69,46 @@
         }
 
         /// <summary>
-        /// Création de l'itérateur de note.
+        /// Création de l'itérateur de toute note.
         /// </summary>
         /// <returns>Retourne une instance de notre itérateur</returns>
+        /// <exception cref="ArgumentNullException">La liste est vide.</exception>
         public NoteIterator CreateNoteIterator()
         {
+            if (notes.Count == 0)
+            {
+                throw new ArgumentNullException("Il n'y a pas de note présente sur la partition.");
+            }
             return new NoteScoreIterator(this);
         }
 
+        /// <summary>
+        /// Création de l'itérateur de notes blanches
+        /// </summary>
+        /// <returns>Retourne une instance de notre itérateur</returns>
+        /// <exception cref="ArgumentNullException">La liste ne comporte pas la note</exception>
         public NoteIterator CreateWhiteNoteIterator()
         {
+            if (new WhiteNoteIterator(this, "Blanche").CurrentNote == null)
+            {
+                throw new ArgumentNullException("La note n'est pas présente sur la partition.");
+            }
             return new WhiteNoteIterator(this, "Blanche");
+        }
+
+        /// <summary>
+        /// Création de l'itérateur de notes avec paramètre.
+        /// </summary>
+        /// <param name="searchPattern">Paramètre de recherche</param>
+        /// <returns>Retourne une instance de notre itérateur</returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public NoteIterator CreateNoteIteratorExt(string searchPattern)
+        {
+            if (new WhiteNoteIterator(this, searchPattern).CurrentNote == null)
+            {
+                throw new ArgumentNullException("La note n'est pas présente sur la partition.");
+            }
+            return new WhiteNoteIterator(this, searchPattern);
         }
     }
 }

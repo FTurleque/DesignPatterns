@@ -71,19 +71,27 @@ NoteIterator scoreIterator = myScore.CreateNoteIterator();
 Console.WriteLine("Itération de toutes les notes :\n");
 while (scoreIterator.HasMore())
 {
-    Console.Write(scoreIterator.Current.Name + " ");
+    Console.Write(scoreIterator.CurrentNote.Name + " ");
     scoreIterator.GetNext();
 }
 
 Console.WriteLine("\n===============================================================================\nItération de toutes les notes blanches\n");
 
-NoteIterator whiteNoteIterator = myScore.CreateWhiteNoteIterator();
 
-while (whiteNoteIterator.HasMore())
+try
 {
-    if (whiteNoteIterator.Current != null)
+    NoteIterator whiteNoteIterator = myScore.CreateWhiteNoteIterator();
+    while (whiteNoteIterator.HasMore())
     {
-        Console.WriteLine(whiteNoteIterator.Current.Name);
+        Console.WriteLine(whiteNoteIterator.CurrentNote.Name);
+        whiteNoteIterator.GetNext();
     }
-    whiteNoteIterator.GetNext();
+}
+catch (ArgumentNullException e)
+{
+    Console.WriteLine(e.Message);
+}
+catch (ArgumentOutOfRangeException e)
+{
+    Console.WriteLine(e.Message);
 }

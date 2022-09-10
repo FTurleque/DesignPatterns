@@ -11,7 +11,7 @@
             currentPosition = 0;
         }
 
-        public Note Current => notes[currentPosition];
+        public Note CurrentNote => notes[currentPosition];
 
         /// <summary>
         /// Récupère la note suivante de la partition.
@@ -19,7 +19,8 @@
         /// <returns>Retourne une note</returns>
         public Note GetNext()
         {
-            return HasMore() ? notes[++currentPosition] : default;
+            // return HasMore() ? notes[++currentPosition] : default;
+            return notes[++currentPosition];
         }
 
         /// <summary>

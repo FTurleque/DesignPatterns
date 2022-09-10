@@ -7,7 +7,7 @@ namespace DesignPatterns.Class.Iterator
 {
     public interface NoteIterator
     {
-        Note Current { get; }
+        Note CurrentNote { get; }
 
         Note GetNext();
 

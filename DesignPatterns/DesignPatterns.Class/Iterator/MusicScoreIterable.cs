@@ -7,8 +7,8 @@ namespace DesignPatterns.Class.Iterator
 {
     public interface MusicScoreIterable
     {
-
         NoteIterator CreateNoteIterator();
         NoteIterator CreateWhiteNoteIterator();
+        NoteIterator CreateNoteIteratorExt(string searchPattern);
     }
 }
