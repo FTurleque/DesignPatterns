@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Class.Composite.Draw.Figure">
+    <Position X="4.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAIAAAAA=</HashCode>
+      <FileName>Composite\Draw\Figure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Draw.FigureS">
+    <Position X="5.25" Y="7.25" Width="2.5" />
+    <InheritanceLine Type="DesignPatterns.Class.Composite.Draw.Figure" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="4.997" />
+        <Point X="5.812" Y="7.126" />
+        <Point X="5.812" Y="7.126" />
+        <Point X="5.812" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Figures" Type="DesignPatterns.Class.Composite.Draw.Figure" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.062" Y="7.25" />
+        <Point X="7.062" Y="4.124" />
+        <Point X="6.25" Y="4.124" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Composite\Draw\FigureS.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Figures" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Draw.Figures.Circle">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <InheritanceLine Type="DesignPatterns.Class.Composite.Draw.Figure" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.125" Y="3.25" />
+        <Point X="5.125" Y="2.377" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Composite\Draw\Figures\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Draw.Figures.Rectangle">
+    <Position X="0.5" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Composite\Draw\Figures\Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Draw.Figures.Triangle">
+    <Position X="0.5" Y="5.75" Width="2.75" />
+    <InheritanceLine Type="DesignPatterns.Class.Composite.Draw.Figure" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="4.997" />
+        <Point X="5.375" Y="6.375" />
+        <Point X="3.25" Y="6.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAQAAAIAAAAA=</HashCode>
+      <FileName>Composite\Draw\Figures\Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Visitor.FigureVisitorForConsole">
+    <Position X="8.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\FigureVisitorForConsole.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Visitor.FigureVisitorForWinForm">
+    <Position X="8.25" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\FigureVisitorForWinForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DesignPatterns.Class.Visitor.IFigureVisitor">
+    <Position X="8.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\IFigureVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
