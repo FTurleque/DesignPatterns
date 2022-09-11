@@ -1,0 +1,39 @@
+﻿using DesignPatterns.Class.State.VideoStates;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DesignPatterns.Class.State
+{
+    public class Video
+    {
+        private IVideoState currentStateVideo;
+
+        public Video()
+        {
+            this.currentStateVideo = new Stop();
+        }
+
+        public void StopTheVideo()
+        {
+            currentStateVideo = currentStateVideo.StopTheVideo(this);
+        }
+
+        public void PlayTheVideo()
+        {
+            currentStateVideo = currentStateVideo.PlayTheVideo(this);
+        }
+
+        public void PauseTheVideo()
+        {
+            currentStateVideo = currentStateVideo.PauseTheVideo(this);
+        }
+
+        public string ToString()
+        {
+            return currentStateVideo.ToString();
+        }
+    }
+}
