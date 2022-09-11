@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using DesignPatterns.Class.Composite.Calculation;
 
 namespace DesignPatterns.Class.Composite.Binaire
 {

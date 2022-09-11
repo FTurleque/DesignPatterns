@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Class.Composite
+﻿namespace DesignPatterns.Class.Composite.Calculation
 {
     public abstract class Expression
     {

@@ -2,6 +2,7 @@
 
 using DesignPatterns.Class.Composite;
 using DesignPatterns.Class.Composite.Binaire;
+using DesignPatterns.Class.Composite.Calculation;
 
 Expression exp1 = new Addition(new Nombre(33), new Nombre(33));
 int resultat1 = exp1.Evalue(); // 66

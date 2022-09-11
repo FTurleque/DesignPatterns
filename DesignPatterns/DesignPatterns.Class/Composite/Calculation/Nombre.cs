@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Class.Composite
+﻿using DesignPatterns.Class.Composite.Calculation;
+
+namespace DesignPatterns.Class.Composite.Calculation
 {
     public class Nombre : Expression
     {

@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns.Class.Composite.Binaire
+﻿using DesignPatterns.Class.Composite.Calculation;
+
+namespace DesignPatterns.Class.Composite.Binaire
 {
     public abstract class Binaire : Expression
     {
