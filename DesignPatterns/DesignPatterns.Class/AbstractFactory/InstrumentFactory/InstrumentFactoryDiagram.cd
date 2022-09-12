@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.FenderFactory">
+    <Position X="3.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\FenderFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.GibsonFactory">
+    <Position X="3.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\GibsonFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.IbanezFactory">
+    <Position X="0.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\IbanezFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.YamahaFactory">
+    <Position X="0.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\YamahaFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.RolandFactory">
+    <Position X="0.5" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\RolandFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Guitar">
+    <Position X="5.75" Y="11.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Guitar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Bass">
+    <Position X="0.5" Y="11.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Bass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Drum">
+    <Position X="8.5" Y="13.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Drum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Synthesizer">
+    <Position X="16.5" Y="11.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Synthesizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument">
+    <Position X="8.75" Y="3.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Instrument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.StringedInstrument">
+    <Position X="2.75" Y="8.75" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\StringedInstrument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.PercussionInstrument">
+    <Position X="8" Y="6.5" Width="6" />
+    <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.875" Y="5.632" />
+        <Point X="10.875" Y="6.566" />
+        <Point X="10.875" Y="6.566" />
+        <Point X="10.875" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\PercussionInstrument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.KeyboardInstrument">
+    <Position X="13.5" Y="8.75" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\KeyboardInstrument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Piano">
+    <Position X="11.25" Y="11.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Instruments\Piano.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.InstrumentFactory">
+    <Position X="9.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\InstrumentFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Instrument" />
+    </ShowAsAssociation>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
