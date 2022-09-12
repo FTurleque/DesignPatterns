@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns.Class.Iterator
+namespace DesignPatterns.Class.Iterator.MusicScore
 {
     public class NoteIteratorExt : NoteIterator
     {
@@ -14,7 +14,7 @@ namespace DesignPatterns.Class.Iterator
         public NoteIteratorExt(MusicScore notes, string searchPattern)
         {
             this.notes = notes;
-            this.currentPosition = IfGetCurrentIsPossible(0); 
+            currentPosition = IfGetCurrentIsPossible(0);
             this.searchPattern = searchPattern;
         }
 

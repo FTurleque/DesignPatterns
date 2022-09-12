@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns.Class.Iterator
+namespace DesignPatterns.Class.Iterator.MusicScore
 {
     public class WhiteNoteIterator : NoteIterator
     {
@@ -13,13 +13,14 @@ namespace DesignPatterns.Class.Iterator
 
         public WhiteNoteIterator(MusicScore _notes, string _searchPattern)
         {
-            this.notes = _notes;
-            this.searchPattern = _searchPattern;
+            notes = _notes;
+            searchPattern = _searchPattern;
             currentPosition = IfGetCurrentIsPossible(0);
         }
 
-        public Note CurrentNote {
-            get 
+        public Note CurrentNote
+        {
+            get
             {
                 return notes[currentPosition];
             }

@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using DesignPatterns.Class.Iterator;
+using DesignPatterns.Class.Iterator.MusicScore;
 
 Note nDo = new Note("Do", "Noire");
 Note nRe = new Note("Re", "Croche");

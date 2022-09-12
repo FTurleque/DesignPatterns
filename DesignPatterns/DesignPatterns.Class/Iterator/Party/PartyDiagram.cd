@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="0...*">
+    <Position X="0.5" Y="7.792" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0...1">
+    <Position X="0.5" Y="6.668" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="- 1 au max =&gt; Composition&#xD;&#xA;- 2 ou + =&gt; Aggregation">
+    <Position X="2.36" Y="8.596" Height="0.51" Width="2.335" />
+  </Comment>
+  <Comment CommentText="Interface du framework">
+    <Position X="4.75" Y="0.5" Height="0.312" Width="1.7" />
+  </Comment>
+  <Comment CommentText="1">
+    <Position X="2.336" Y="6.648" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1 ... *">
+    <Position X="7.307" Y="7.595" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="DesignPatterns.Class.Iterator.Party.Guest">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Iterator\Party\Guest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Iterator.Party.Party">
+    <Position X="0.5" Y="4.5" Width="3" />
+    <AssociationLine Name="guests" Type="DesignPatterns.Class.Iterator.Party.Guest" FixedToPoint="true">
+      <Path>
+        <Point X="1.438" Y="6.44" />
+        <Point X="1.438" Y="8.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.641" Y="0.146" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAACAAAAAQAAAAAAAAEAAAACAAAAAA=</HashCode>
+      <FileName>Iterator\Party\Party.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="guests" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Iterator.Party.EnumeratorDefaultToGuestInParty">
+    <Position X="8.25" Y="7" Width="2.75" />
+    <AssociationLine Name="partyToGo" Type="DesignPatterns.Class.Iterator.Party.Party" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="7.375" />
+        <Point X="3.167" Y="7.375" />
+        <Point X="3.167" Y="6.44" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.994" Y="0.206" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAABAAAAACAAAACAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Iterator\Party\EnumeratorDefaultToGuestInParty.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="partyToGo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Iterator.Party.EnumeratorWithoutFonzy">
+    <Position X="5.5" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAABAAAAACAAAACAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Iterator\Party\EnumeratorWithoutFonzy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="partyToGo" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="System.Collections.Generic.IEnumerator&lt;T&gt;">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.Generic.IEnumerable&lt;T&gt;">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.IEnumerator">
+    <Position X="9.25" Y="2" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.IDisposable">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.Collections.IEnumerable">
+    <Position X="3.25" Y="1.75" Width="2.25" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

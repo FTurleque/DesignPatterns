@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns.Class.Iterator
+namespace DesignPatterns.Class.Iterator.MusicScore
 {
     public interface MusicScoreIterable
     {

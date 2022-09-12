@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.Class.Iterator
+﻿namespace DesignPatterns.Class.Iterator.MusicScore
 {
     public class Note
     {
