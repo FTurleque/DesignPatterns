@@ -9,6 +9,13 @@ namespace DesignPatterns.Class.Commande.CharacterMovement.Moves
 {
     public class CommandTurnRight : CommandForMouse
     {
+        private double angle;
+
+        public CommandTurnRight(double _angle)
+        {
+            this.angle = _angle;
+        }
+
         public override void Cancel()
         {
             throw new NotImplementedException();

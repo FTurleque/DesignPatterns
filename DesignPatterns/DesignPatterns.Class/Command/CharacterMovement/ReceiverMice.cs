@@ -8,5 +8,7 @@ namespace DesignPatterns.Class.Command.CharacterMovement
 {
     public class ReceiverMice
     {
+        private int x;
+        private int y;
     }
 }

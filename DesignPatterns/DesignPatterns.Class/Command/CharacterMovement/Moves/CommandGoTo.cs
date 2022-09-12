@@ -9,6 +9,13 @@ namespace DesignPatterns.Class.Commande.CharacterMovement.Moves
 {
     public class CommandGoTo : CommandForMouse
     {
+        private int stepNumber;
+
+        public CommandGoTo(int _stepNumber)
+        {
+            this.stepNumber = _stepNumber;
+        }
+
         public override void Cancel()
         {
             throw new NotImplementedException();

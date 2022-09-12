@@ -8,6 +8,8 @@ namespace DesignPatterns.Class.Command.CharacterMovement
 {
     public abstract class CommandForMouse : ICommand
     {
+        private ReceiverMice receiver;
+
         public abstract void Cancel();
 
         public abstract void Execute();

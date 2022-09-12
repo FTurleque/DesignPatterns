@@ -9,6 +9,13 @@ namespace DesignPatterns.Class.Commande.CharacterMovement.Moves
 {
     public class CommandBackOff : CommandForMouse
     {
+        private int stepNumber;
+
+        public CommandBackOff(int _stepNumber)
+        {
+            this.stepNumber = _stepNumber;
+        }
+
         public override void Cancel()
         {
             throw new NotImplementedException();
