@@ -10,7 +10,7 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
     {
         private int numberOfKeys;
 
-        protected KeyboardInstrument(string _name, string _model, string _type, int _price, int _numberOfKeys) : base(_name, _model, _type, _price)
+        protected KeyboardInstrument(string _model, string _type, int _price, int _numberOfKeys) : base(_model, _type, _price)
         {
             this.numberOfKeys = _numberOfKeys;
         }

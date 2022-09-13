@@ -8,7 +8,7 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
 {
     public class Bass : StringedInstrument
     {
-        public Bass(string _name, string _model, string _type, int _price, int _stringsNumber) : base(_name, _model, _type, _price, _stringsNumber)
+        public Bass(string _model, string _type, int _price, int _stringsNumber) : base(_model, _type, _price, _stringsNumber)
         {
         }
     }

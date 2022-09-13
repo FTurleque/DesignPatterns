@@ -10,7 +10,7 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
     {
         private int stringsNumber;
 
-        protected StringedInstrument(string _name, string _model, string _type, int _price, int _stringsNumber) : base(_name, _model, _type, _price)
+        protected StringedInstrument(string _model, string _type, int _price, int _stringsNumber) : base(_model, _type, _price)
         {
             this.stringsNumber = _stringsNumber;
         }

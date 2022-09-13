@@ -3,6 +3,42 @@
 using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories;
 using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments;
 
-IbanezFactory ibanez = new();
+List<string> ibanez = new List<string>()
+{
+    "LGB300", 
+    "RG8570Z", 
+    "AM2000H", 
+    "JGM5", 
+    "AE295", 
+    "SR2600", 
+    "SR4FMDX", 
+};
 
-Instrument gt = ibanez.CreateInstrument(new Guitar("RG", "205ZR", "Electric", 500, 6));
+List<string> gibson = new List<string>()
+{
+    "LP57", 
+    "SG", 
+    "ES-335", 
+    "Hummingbird", 
+    "G200", 
+    "Thunderbird", 
+    "SG", 
+    "Thunderbird", 
+};
+
+List<string> yamaha = new List<string>()
+{
+    "SLG200S", 
+    "APX-T2", 
+    "APX-600", 
+    "TRBX-304", 
+    "TRBX-504", 
+    "Burgundy", 
+    "Stage", 
+    "DTX6K2", 
+    "DTX10K", 
+    "DTX10K", 
+    "YDP-165", 
+    "PSR-E373", 
+    "PSR-SX700", 
+};
