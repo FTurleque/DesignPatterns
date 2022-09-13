@@ -7,13 +7,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories
 {
-    public class YamahaFactory : InstrumentFactory
+    public class YamahaFactory
     {
         public Instrument Instrument { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Instrument CreateInstrument()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

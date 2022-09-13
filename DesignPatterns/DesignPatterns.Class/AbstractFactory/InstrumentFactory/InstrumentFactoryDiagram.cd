@@ -1,44 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.FenderFactory">
-    <Position X="3.5" Y="0.75" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbstractFactory\InstrumentFactory\Factories\FenderFactory.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.GibsonFactory">
-    <Position X="3.5" Y="3" Width="2.5" />
+    <Position X="3.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\GibsonFactory.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.IbanezFactory">
-    <Position X="0.5" Y="0.75" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbstractFactory\InstrumentFactory\Factories\IbanezFactory.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.YamahaFactory">
-    <Position X="0.5" Y="3" Width="2.5" />
+    <Position X="0.5" Y="4.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\YamahaFactory.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.RolandFactory">
-    <Position X="0.5" Y="5.25" Width="2.5" />
+    <Position X="0.5" Y="2.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\RolandFactory.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Guitar">
     <Position X="2.25" Y="13.5" Width="5" />
@@ -133,8 +114,22 @@
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Piano.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.IbanezFactory">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\IbanezFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.FenderFactory">
+    <Position X="3.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\Factories\FenderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.InstrumentFactory">
-    <Position X="8.25" Y="0.75" Width="2.5" />
+    <Position X="7.75" Y="0.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\InstrumentFactory.cs</FileName>
