@@ -3,15 +3,15 @@
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.FenderFactory">
     <Position X="3.5" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\FenderFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.GibsonFactory">
-    <Position X="3.5" Y="2.75" Width="2.5" />
+    <Position X="3.5" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\GibsonFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -19,23 +19,23 @@
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.IbanezFactory">
     <Position X="0.5" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\IbanezFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.YamahaFactory">
-    <Position X="0.5" Y="2.75" Width="2.5" />
+    <Position X="0.5" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\YamahaFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.RolandFactory">
-    <Position X="0.5" Y="4.5" Width="2.5" />
+    <Position X="0.5" Y="5.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\RolandFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

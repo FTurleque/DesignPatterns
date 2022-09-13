@@ -9,6 +9,8 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories
 {
     public class FenderFactory : InstrumentFactory
     {
+        public Instrument Instrument { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public Instrument CreateInstrument()
         {
             throw new NotImplementedException();
