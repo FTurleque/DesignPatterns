@@ -14,5 +14,11 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         {
             this.numberOfKeys = _numberOfKeys;
         }
+
+        public int NumberOfKeys
+        {
+            get { return numberOfKeys; }
+            protected set { numberOfKeys = value; }
+        }
     }
 }

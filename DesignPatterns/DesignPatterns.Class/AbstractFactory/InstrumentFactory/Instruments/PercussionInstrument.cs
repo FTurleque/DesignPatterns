@@ -14,5 +14,11 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         {
             this.elementNumber = _elementNumber;
         }
+
+        public int ElementNumber
+        {
+            get { return elementNumber; }
+            protected set { elementNumber = value; }
+        }
     }
 }

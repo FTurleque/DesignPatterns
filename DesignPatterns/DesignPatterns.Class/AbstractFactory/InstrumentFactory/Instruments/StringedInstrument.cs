@@ -14,5 +14,11 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         {
             this.stringsNumber = _stringsNumber;
         }
+
+        public int StringsNumber
+        {
+            get { return stringsNumber; }
+            protected set { stringsNumber = value; }
+        }
     }
 }

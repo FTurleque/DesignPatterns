@@ -20,5 +20,29 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
             this.type = _type;
             this.price = _price;
         }
+
+        public string Name
+        {
+            get { return this.name; }
+            protected set { this.name = value; }
+        }
+
+        public string Model
+        {
+            get { return this.model; }
+            protected set { this.model = value; }
+        }
+
+        public string Type
+        {
+            get { return this.type; }
+            protected set { this.type = value; }
+        }
+
+        public int Price
+        {
+            get { return this.price; }
+            protected set { this.price = value; }
+        }
     }
 }
