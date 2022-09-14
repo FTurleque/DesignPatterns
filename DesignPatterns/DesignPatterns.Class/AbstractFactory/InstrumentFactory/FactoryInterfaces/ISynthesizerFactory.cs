@@ -4,8 +4,6 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfac
 {
     internal interface ISynthesizerFactory
     {
-        Instrument InstrumentCreate { get; set; }
-
         public Instrument CreateSynthesizer(string name);
     }
 }

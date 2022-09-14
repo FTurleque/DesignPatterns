@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.GibsonFactory">
-    <Position X="3.75" Y="3.25" Width="3.25" />
+    <Position X="3.5" Y="3" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\GibsonFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -11,17 +11,19 @@
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.YamahaFactory">
     <Position X="0.5" Y="5.75" Width="3.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAgAAAAQAAAAAAAAAIAAgAAAAAAAAAAAAABAACA=</HashCode>
+      <HashCode>AQAAAAgAAAAQAAAAAAAAAIgAAAAAAAAAAAAAAABAACA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\YamahaFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Guitar">
-    <Position X="3.25" Y="13.5" Width="4.25" />
+    <Position X="3.75" Y="13.75" Width="4.25" />
     <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.StringedInstrument" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6.188" Y="10.886" />
-        <Point X="6.188" Y="13.5" />
+        <Point X="6.688" Y="11.136" />
+        <Point X="6.688" Y="12.443" />
+        <Point X="6.688" Y="12.443" />
+        <Point X="6.688" Y="13.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -30,13 +32,13 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Bass">
-    <Position X="1.25" Y="11.75" Width="4.25" />
+    <Position X="1.75" Y="12" Width="4.25" />
     <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.StringedInstrument" FixedFromPoint="true">
       <Path>
-        <Point X="6.188" Y="10.886" />
-        <Point X="6.188" Y="11.375" />
-        <Point X="3.375" Y="11.375" />
-        <Point X="3.375" Y="11.75" />
+        <Point X="6.688" Y="11.136" />
+        <Point X="6.688" Y="11.625" />
+        <Point X="3.875" Y="11.625" />
+        <Point X="3.875" Y="12" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -45,53 +47,75 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Drum">
-    <Position X="7.25" Y="11.75" Width="4.25" />
+    <Position X="7.75" Y="12" Width="4.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Drum.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Synthesizer">
-    <Position X="13.5" Y="11.75" Width="4.5" />
+    <Position X="14" Y="12" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Synthesizer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument">
-    <Position X="7.5" Y="2.5" Width="3.5" />
+    <Position X="8.25" Y="2.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAQAAAAAAAAAAAAAAAAABAAAAAQgAAAAIAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Instrument.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.StringedInstrument">
-    <Position X="3" Y="8.75" Width="5" />
+    <Position X="3.5" Y="9" Width="5" />
+    <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true">
+      <Path>
+        <Point X="9.875" Y="5.276" />
+        <Point X="9.875" Y="6" />
+        <Point X="6" Y="6" />
+        <Point X="6" Y="9" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\StringedInstrument.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.PercussionInstrument">
-    <Position X="6.75" Y="6.25" Width="5.25" />
+    <Position X="7.25" Y="6.25" Width="5.25" />
+    <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true">
+      <Path>
+        <Point X="9.875" Y="5.276" />
+        <Point X="9.875" Y="6.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\PercussionInstrument.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.KeyboardInstrument">
-    <Position X="10.5" Y="8.75" Width="5" />
+    <Position X="11" Y="9" Width="5" />
+    <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true">
+      <Path>
+        <Point X="9.875" Y="5.276" />
+        <Point X="9.875" Y="6" />
+        <Point X="13.5" Y="6" />
+        <Point X="13.5" Y="9" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\KeyboardInstrument.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Piano">
-    <Position X="11.25" Y="13.5" Width="4.25" />
+    <Position X="11.75" Y="13.75" Width="4.25" />
     <InheritanceLine Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.KeyboardInstrument" FixedToPoint="true">
       <Path>
-        <Point X="13" Y="10.886" />
-        <Point X="13" Y="13.5" />
+        <Point X="13.5" Y="11.136" />
+        <Point X="13.5" Y="13.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -100,88 +124,47 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories.IbanezFactory">
-    <Position X="0.5" Y="0.75" Width="3.25" />
+    <Position X="0.5" Y="0.5" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Factories\IbanezFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.IGuitarFactory">
-    <Position X="11.75" Y="0.5" Width="2.75" />
-    <AssociationLine Name="InstrumentCreate" Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="13.125" Y="1.603" />
-        <Point X="13.125" Y="3.25" />
-        <Point X="11" Y="3.25" />
-      </Path>
-    </AssociationLine>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAgAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\IGuitarFactory.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="InstrumentCreate" />
-    </ShowAsAssociation>
-  </Interface>
   <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.IBassFactory">
-    <Position X="13.75" Y="2" Width="2.75" />
-    <AssociationLine Name="InstrumentCreate" Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="14.094" Y="3.103" />
-        <Point X="14.094" Y="3.875" />
-        <Point X="11" Y="3.875" />
-      </Path>
-    </AssociationLine>
+    <Position X="5.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\IBassFactory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="InstrumentCreate" />
-    </ShowAsAssociation>
   </Interface>
   <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.IDrumFactory">
-    <Position X="14.75" Y="3.5" Width="2.75" />
-    <AssociationLine Name="InstrumentCreate" Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="15.562" Y="4.603" />
-        <Point X="15.562" Y="4.938" />
-        <Point X="11" Y="4.938" />
-      </Path>
-    </AssociationLine>
+    <Position X="12.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\IDrumFactory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="InstrumentCreate" />
-    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.IGuitarFactory">
+    <Position X="12.5" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\IGuitarFactory.cs</FileName>
+    </TypeIdentifier>
   </Interface>
   <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.IPianoFactory">
-    <Position X="8.5" Y="0.5" Width="2.75" />
+    <Position X="9" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\IPianoFactory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="InstrumentCreate" />
-    </ShowAsAssociation>
   </Interface>
   <Interface Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces.ISynthesizerFactory">
-    <Position X="4.5" Y="0.5" Width="3" />
-    <AssociationLine Name="InstrumentCreate" Type="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Instrument">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.474" Y="0.26" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="12.5" Y="2.25" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAACA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\FactoryInterfaces\ISynthesizerFactory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="InstrumentCreate" />
-    </ShowAsAssociation>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

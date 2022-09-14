@@ -4,8 +4,6 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfac
 {
     internal interface IGuitarFactory
     {
-        Instrument InstrumentCreate { get; set; }
-
         public Instrument CreateGuitar(string name);
     }
 }

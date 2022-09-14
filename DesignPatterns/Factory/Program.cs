@@ -46,5 +46,5 @@ List<string> yamaha = new List<string>()
 };
 
 YamahaFactory yamahaFactory = new YamahaFactory();
-yamahaFactory.CreateBass(yamaha[3]);
-
+Instrument t = yamahaFactory.CreateBass(yamaha[3]);
+Console.WriteLine(t.GetType());
