@@ -1,33 +1,37 @@
 ﻿using DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces;
 using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments;
+using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Objects;
 
 namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories
 {
-    public class YamahaFactory : SynthesizerFactory, PianoFactory, GuitarFactory, BassFactory, DrumFactory
+    public class YamahaFactory : ISynthesizerFactory, IPianoFactory, IGuitarFactory, IBassFactory, IDrumFactory
     {
-        public Instrument Instrument { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        Dictionary<string, Instrument> catalogYamaha = InstrumentObject.GetcatalogYamaha;
 
-        public Bass CreateBass(string name)
+        public Instrument InstrumentCreate { get; set; }
+
+        public Instrument CreateBass(string name)
+        {
+            InstrumentCreate = catalogYamaha[name];
+            return InstrumentCreate;
+        }
+
+        public Instrument CreateDrum(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Drum CreateDrum(string name)
+        public Instrument CreateGuitar(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Guitar CreateGuitar(string name)
+        public Instrument CreatePiano(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Piano CreatePiano(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Synthesizer CreateSynthesizer(string name)
+        public Instrument CreateSynthesizer(string name)
         {
             throw new NotImplementedException();
         }

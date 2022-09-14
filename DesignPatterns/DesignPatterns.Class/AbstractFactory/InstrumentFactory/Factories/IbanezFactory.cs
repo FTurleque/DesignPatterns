@@ -1,18 +1,21 @@
 ﻿using DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces;
 using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments;
+using DesignPatterns.Class.AbstractFactory.InstrumentFactory.Objects;
 
 namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Factories
 {
-    public class IbanezFactory : GuitarFactory, BassFactory
+    public class IbanezFactory : IGuitarFactory, IBassFactory
     {
-        public Instrument Instrument { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        Dictionary<string, Instrument> catalogIbanez = InstrumentObject.GetCatalogIbanez;
 
-        public Bass CreateBass(string name)
+        public Instrument InstrumentCreate { get; set; }
+
+        public Instrument CreateBass(string name)
         {
             throw new NotImplementedException();
         }
 
-        public Guitar CreateGuitar(string name)
+        public Instrument CreateGuitar(string name)
         {
             throw new NotImplementedException();
         }

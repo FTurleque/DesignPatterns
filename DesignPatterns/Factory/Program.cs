@@ -13,6 +13,8 @@ List<string> ibanez = new List<string>()
     "SR2600", 
     "SR4FMDX", 
 };
+/*IbanezFactory ibanezFactory = new IbanezFactory();
+ibanezFactory.CreateBass(ibanez[0]);*/
 
 List<string> gibson = new List<string>()
 {
@@ -42,3 +44,7 @@ List<string> yamaha = new List<string>()
     "PSR-E373", 
     "PSR-SX700", 
 };
+
+YamahaFactory yamahaFactory = new YamahaFactory();
+yamahaFactory.CreateBass(yamaha[3]);
+

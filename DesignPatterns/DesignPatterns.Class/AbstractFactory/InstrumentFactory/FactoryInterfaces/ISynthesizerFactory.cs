@@ -2,10 +2,10 @@
 
 namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.FactoryInterfaces
 {
-    internal interface PianoFactory
+    internal interface ISynthesizerFactory
     {
-        Instrument Instrument { get; set; }
+        Instrument InstrumentCreate { get; set; }
 
-        public Piano CreatePiano(string name);
+        public Instrument CreateSynthesizer(string name);
     }
 }
