@@ -17,7 +17,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Decorator.Vehicule.VehiculesDecorator.SpeedRegulator">
-    <Position X="2.5" Y="6" Width="4.25" />
+    <Position X="1.75" Y="6" Width="4.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Decorator\Vehicule\VehiculesDecorator\SpeedRegulator.cs</FileName>
