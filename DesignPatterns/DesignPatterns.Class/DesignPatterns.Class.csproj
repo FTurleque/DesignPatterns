@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Proxy\Bank\" />
+    <Folder Include="Proxy\trezq\" />
   </ItemGroup>
 
 </Project>
