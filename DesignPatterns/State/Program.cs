@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using DesignPatterns.Class.State;
+using DesignPatterns.Class.State.MediaVideo;
 
 Console.WriteLine("Hello, World!");
 

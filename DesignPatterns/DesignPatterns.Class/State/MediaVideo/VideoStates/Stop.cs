@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Class.State.VideoStates
+namespace DesignPatterns.Class.State.MediaVideo.VideoStates
 {
     public class Stop : IVideoState
     {

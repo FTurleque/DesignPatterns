@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Class.State.MediaVideo.Video">
+    <Position X="1" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAEAAEAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>State\MediaVideo\Video.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentStateVideo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Class.State.MediaVideo.VideoStates.Pause" BaseTypeListCollapsed="true">
+    <Position X="5" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\MediaVideo\VideoStates\Pause.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DesignPatterns.Class.State.MediaVideo.VideoStates.Play" BaseTypeListCollapsed="true">
+    <Position X="2" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\MediaVideo\VideoStates\Play.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DesignPatterns.Class.State.MediaVideo.VideoStates.Stop" BaseTypeListCollapsed="true">
+    <Position X="8" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\MediaVideo\VideoStates\Stop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="DesignPatterns.Class.State.MediaVideo.IVideoState">
+    <Position X="6.5" Y="1.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAoAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\MediaVideo\IVideoState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

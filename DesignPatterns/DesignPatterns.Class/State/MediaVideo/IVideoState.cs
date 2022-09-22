@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns.Class.State
+namespace DesignPatterns.Class.State.MediaVideo
 {
     public interface IVideoState
     {

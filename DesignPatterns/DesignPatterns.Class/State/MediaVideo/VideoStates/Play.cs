@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Class.State.VideoStates
+namespace DesignPatterns.Class.State.MediaVideo.VideoStates
 {
-    public class Pause : IVideoState
+    public class Play : IVideoState
     {
         public IVideoState PauseTheVideo(Video ctx)
         {
-            Console.WriteLine("Déjà en pause.");
-            return this;
+            return new Pause();
         }
 
         public IVideoState PlayTheVideo(Video ctx)
         {
-            return new Play();
+            Console.WriteLine("Déjà en lécture.");
+            return this;
         }
 
         public IVideoState StopTheVideo(Video ctx)

@@ -8,12 +8,11 @@
 
   <ItemGroup>
     <Compile Remove="NewFolder\**" />
+    <Compile Remove="Proxy\trezq\**" />
     <EmbeddedResource Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Proxy\trezq\**" />
     <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Proxy\trezq\" />
+    <None Remove="Proxy\trezq\**" />
   </ItemGroup>
 
 </Project>

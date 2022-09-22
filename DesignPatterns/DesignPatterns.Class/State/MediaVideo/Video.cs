@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Class.State
+namespace DesignPatterns.Class.State.MediaVideo
 {
     public class Video
     {
@@ -13,7 +13,7 @@ namespace DesignPatterns.Class.State
 
         public Video()
         {
-            this.currentStateVideo = new Stop();
+            currentStateVideo = new Stop();
         }
 
         public void StopTheVideo()
