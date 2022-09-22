@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPatterns.Class.Observator.Weather.Subjects.NaturalSubject">
+    <Position X="0.75" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAABAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Subjects\NaturalSubject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="INaturalObserver" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Observator.Weather.Subjects.Weather">
+    <Position X="1.25" Y="6.25" Width="2.5" />
+    <AssociationLine Name="TheWeatherConditions" Type="DesignPatterns.Class.Observator.Weather.Subjects.TheWeatherConditions">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.23" Y="-0.419" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAQAAAAAAAACAAgAEAAAAQAAAAEAAA=</HashCode>
+      <FileName>Observator\Weather\Subjects\Weather.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TheWeatherConditions" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Class.Observator.Weather.Observers.WeatherStation">
+    <Position X="11.75" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Observers\WeatherStation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Person">
+    <Position X="8.5" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Observers\Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Phone">
+    <Position X="5.25" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Observers\Phone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="DesignPatterns.Class.Observator.Weather.Interfaces.INaturalObserver">
+    <Position X="8" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Interfaces\INaturalObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DesignPatterns.Class.Observator.Weather.Interfaces.INaturalSubject">
+    <Position X="3" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Interfaces\INaturalSubject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DesignPatterns.Class.Observator.Weather.Subjects.TheWeatherConditions">
+    <Position X="3.75" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAABAAAAAAAAAAAAAABAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Observator\Weather\Subjects\TheWeatherConditions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
