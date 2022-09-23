@@ -10,7 +10,8 @@ namespace DesignPatterns.Class.State.StateButton.States
     {
         public IStateButton DisablePushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("This actions is impossible.");
+            return this;
         }
 
         public IStateButton DisplayPushButton(PushButton ctx)
@@ -20,7 +21,8 @@ namespace DesignPatterns.Class.State.StateButton.States
 
         public IStateButton EnablePushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The button is already disable");
+            return this;
         }
 
         public IStateButton ErasePushButton(PushButton ctx)
