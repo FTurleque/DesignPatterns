@@ -15,7 +15,7 @@ namespace DesignPatterns.Class.State.StateButton.States
 
         public IStateButton DisplayPushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            return this.EnablePushButton(ctx);
         }
 
         public IStateButton EnablePushButton(PushButton ctx)
@@ -25,7 +25,7 @@ namespace DesignPatterns.Class.State.StateButton.States
 
         public IStateButton ErasePushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            return this.DisplayPushButton(ctx);
         }
 
         public IStateButton PressPushButton(PushButton ctx)
