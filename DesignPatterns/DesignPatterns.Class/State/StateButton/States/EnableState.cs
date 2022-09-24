@@ -8,21 +8,30 @@ namespace DesignPatterns.Class.State.StateButton.States
 {
     public class EnableState : IStateButton
     {
+        /// <summary>
+        /// Désactivation du boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
         public IStateButton DisablePushButton(PushButton ctx)
         {
-            Console.WriteLine("This actions is impossible.");
+            return new DisableState();
+        }
+
+        /// <summary>
+        /// Activation du boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
+        public IStateButton EnablePushButton(PushButton ctx)
+        {
+            Console.WriteLine("The button is already enable.");
             return this;
         }
 
         public IStateButton DisplayPushButton(PushButton ctx)
         {
             throw new NotImplementedException();
-        }
-
-        public IStateButton EnablePushButton(PushButton ctx)
-        {
-            Console.WriteLine("The button is already disable");
-            return this;
         }
 
         public IStateButton ErasePushButton(PushButton ctx)
@@ -38,6 +47,11 @@ namespace DesignPatterns.Class.State.StateButton.States
         public IStateButton ReleasePushButton(PushButton ctx)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return "Enable";
         }
     }
 }

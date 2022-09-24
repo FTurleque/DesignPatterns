@@ -8,9 +8,46 @@ namespace DesignPatterns.Class.State.StateButton.States
 {
     public class DisableState : IStateButton
     {
+        /// <summary>
+        /// Désactivation du boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
         public IStateButton DisablePushButton(PushButton ctx)
         {
             Console.WriteLine("The button is already disable.");
+            return this;
+        }
+
+        /// <summary>
+        /// Activation du boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
+        public IStateButton EnablePushButton(PushButton ctx)
+        {
+            return new EnableState();
+        }
+
+        /// <summary>
+        /// Appui sur le boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
+        public IStateButton PressPushButton(PushButton ctx)
+        {
+            Console.WriteLine("The button is disable, you cant push it ");
+            return this;
+        }
+
+        /// <summary>
+        /// Libération du boutton.
+        /// </summary>
+        /// <param name="ctx">Instance du bouton</param>
+        /// <returns>Retourne l'état du boutton</returns>
+        public IStateButton ReleasePushButton(PushButton ctx)
+        {
+            Console.WriteLine("The button is disable, you cant release it ");
             return this;
         }
 
@@ -19,25 +56,14 @@ namespace DesignPatterns.Class.State.StateButton.States
             throw new NotImplementedException();
         }
 
-        public IStateButton EnablePushButton(PushButton ctx)
-        {
-            Console.WriteLine("This actions is impossible.");
-            return this;
-        }
-
         public IStateButton ErasePushButton(PushButton ctx)
         {
             throw new NotImplementedException();
         }
 
-        public IStateButton PressPushButton(PushButton ctx)
+        public override string ToString()
         {
-            throw new NotImplementedException();
-        }
-
-        public IStateButton ReleasePushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
+            return "Disable";
         }
     }
 }

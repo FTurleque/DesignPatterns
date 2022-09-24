@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Class.State.StateButton.States;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,12 @@ namespace DesignPatterns.Class.State.StateButton
 
         public PushButton()
         {
-            throw new System.NotImplementedException();
+            Display();
         }
 
         public void Display()
         {
-            throw new System.NotImplementedException();
+            currentStateButton = new EnableState();
         }
 
         public void Press()

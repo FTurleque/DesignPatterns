@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.State.StateButton.States
 {
-    public class Pushed : IStateButton
+    public class Released : IStateButton
     {
         public IStateButton DisablePushButton(PushButton ctx)
         {
@@ -20,7 +20,7 @@ namespace DesignPatterns.Class.State.StateButton.States
 
         public IStateButton EnablePushButton(PushButton ctx)
         {
-            return new EnableState();
+            throw new NotImplementedException();
         }
 
         public IStateButton ErasePushButton(PushButton ctx)
@@ -28,30 +28,20 @@ namespace DesignPatterns.Class.State.StateButton.States
             throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// Appui sur le boutton.
-        /// </summary>
-        /// <param name="ctx">Instance du bouton</param>
-        /// <returns>Retourne l'état du boutton</returns>
         public IStateButton PressPushButton(PushButton ctx)
         {
-            Console.WriteLine("The button is alredy pushed");
-            return this;
+            return new Pushed();
         }
 
-        /// <summary>
-        /// Liberation du boutton.
-        /// </summary>
-        /// <param name="ctx">Instance du bouton</param>
-        /// <returns>Retourne l'état du boutton</returns>
         public IStateButton ReleasePushButton(PushButton ctx)
         {
-            return new Released();
+            Console.WriteLine("The button is alredy released.");
+            return this;
         }
 
         public override string ToString()
         {
-            return "Pushed";
+            return "Released";
         }
     }
 }

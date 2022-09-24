@@ -14,5 +14,6 @@ namespace DesignPatterns.Class.State.StateButton
         IStateButton DisablePushButton(PushButton ctx);
         IStateButton EnablePushButton(PushButton ctx);
         IStateButton ErasePushButton(PushButton ctx);
+        public string ToString();
     }
 }
