@@ -9,6 +9,6 @@ namespace DesignPatterns.Class.Observator.Weather.Interfaces
 {
     public interface INaturalObserver
     {
-        public void Update(NaturalSubject _weather);
+        public void Update(NaturalSubject _naturalSubject);
     }
 }

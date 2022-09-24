@@ -10,9 +10,16 @@ namespace DesignPatterns.Class.Observator.Weather.Observers
 {
     public class Phone : INaturalObserver
     {
-        public void Update(NaturalSubject _weather)
+        private string phoneNumber;
+
+        public Phone(string phoneNumber)
         {
-            throw new NotImplementedException();
+            this.phoneNumber = phoneNumber;
+        }
+
+        public void Update(NaturalSubject _naturalSubject)
+        {
+            Console.WriteLine(phoneNumber + " " + _naturalSubject.Warning);
         }
     }
 }

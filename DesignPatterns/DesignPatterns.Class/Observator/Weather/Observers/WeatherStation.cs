@@ -10,9 +10,10 @@ namespace DesignPatterns.Class.Observator.Weather.Observers
 {
     public class WeatherStation : INaturalObserver
     {
-        public void Update(NaturalSubject _weather)
+
+        public void Update(NaturalSubject _naturalSubject)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(_naturalSubject.Warning);
         }
     }
 }

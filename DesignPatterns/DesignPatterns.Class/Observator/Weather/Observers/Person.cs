@@ -10,9 +10,20 @@ namespace DesignPatterns.Class.Observator.Weather.Observers
 {
     public class Person : INaturalObserver
     {
-        public void Update(NaturalSubject _weather)
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public string Email { get; private set; }
+
+        public Person(string _firstName, string _lastName, string _email)
         {
-            throw new NotImplementedException();
+            this.FirstName = _firstName;
+            this.LastName = _lastName;
+            this.Email = _email;
+        }
+
+        public void Update(NaturalSubject _naturalSubject)
+        {
+            Console.WriteLine(Email + " " + _naturalSubject.Warning);
         }
     }
 }

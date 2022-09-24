@@ -1,33 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="DesignPatterns.Class.Observator.Weather.Subjects.NaturalSubject">
-    <Position X="0.75" Y="2.75" Width="3.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAhAAAAAAAAAAAAABAAAAABAAAAAAAAAAAA=</HashCode>
-      <FileName>Observator\Weather\Subjects\NaturalSubject.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="INaturalObserver" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="DesignPatterns.Class.Observator.Weather.Subjects.Weather">
-    <Position X="1.25" Y="6.25" Width="2.5" />
-    <AssociationLine Name="TheWeatherConditions" Type="DesignPatterns.Class.Observator.Weather.Subjects.TheWeatherConditions">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.23" Y="-0.419" />
-      </MemberNameLabel>
+    <Position X="1" Y="3.5" Width="3.5" />
+    <AssociationLine Name="naturalObserverList" Type="DesignPatterns.Class.Observator.Weather.Interfaces.INaturalObserver" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.875" Y="3.5" />
+        <Point X="2.875" Y="2.5" />
+        <Point X="8" Y="2.5" />
+      </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAQAAAAAAAACAAgAEAAAAQAAAAEAAA=</HashCode>
-      <FileName>Observator\Weather\Subjects\Weather.cs</FileName>
+      <HashCode>AAAAAAAAAIhAAAAAAAAAABAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observator\Weather\Subjects\NaturalSubject.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="TheWeatherConditions" />
-    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="naturalObserverList" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.WeatherStation">
-    <Position X="11.75" Y="5.25" Width="3" />
+    <Position X="10.75" Y="7" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Observers\WeatherStation.cs</FileName>
@@ -35,37 +27,60 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Person">
-    <Position X="8.5" Y="5.25" Width="3" />
+    <Position X="6.25" Y="5" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Observator\Weather\Observers\Person.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Phone">
-    <Position X="5.25" Y="5.25" Width="3" />
+    <Position X="10.75" Y="4" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Observers\Phone.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="DesignPatterns.Class.Observator.Weather.Subjects.Weather">
+    <Position X="0.5" Y="7" Width="4.25" />
+    <InheritanceLine Type="DesignPatterns.Class.Observator.Weather.Subjects.NaturalSubject" FixedToPoint="true">
+      <Path>
+        <Point X="2.75" Y="5.632" />
+        <Point X="2.75" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="CurrentWeatherConditions" Type="DesignPatterns.Class.Observator.Weather.Subjects.TheWeatherConditions" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="9.646" />
+        <Point X="2.688" Y="9.965" />
+        <Point X="7.25" Y="9.965" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAIAAAQAAAAAAAACAAAAEAAAAAAAAAEgAA=</HashCode>
+      <FileName>Observator\Weather\Subjects\Weather.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentWeatherConditions" />
+    </ShowAsAssociation>
+  </Class>
   <Interface Name="DesignPatterns.Class.Observator.Weather.Interfaces.INaturalObserver">
-    <Position X="8" Y="3" Width="3" />
+    <Position X="8" Y="2" Width="3" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Interfaces\INaturalObserver.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="DesignPatterns.Class.Observator.Weather.Interfaces.INaturalSubject">
-    <Position X="3" Y="0.5" Width="3.5" />
+    <Position X="0.75" Y="0.5" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAhAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Interfaces\INaturalSubject.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="DesignPatterns.Class.Observator.Weather.Subjects.TheWeatherConditions">
-    <Position X="3.75" Y="9.5" Width="2" />
+    <Position X="7.25" Y="9.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAABAAAAAAAAAAAAAABAAAAAAAAgAAAAA=</HashCode>
       <FileName>Observator\Weather\Subjects\TheWeatherConditions.cs</FileName>
