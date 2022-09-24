@@ -11,5 +11,10 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         public Guitar(string _model, string _type, int _price, int _stringsNumber) : base(_model, _type, _price, _stringsNumber)
         {
         }
+
+        public override string ToString()
+        {
+            return "Guitar";
+        }
     }
 }

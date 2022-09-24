@@ -11,5 +11,10 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         public Synthesizer(string _model, string _type, int _price, int _numberOfKeys) : base(_model, _type, _price, _numberOfKeys)
         {
         }
+
+        public override string ToString()
+        {
+            return "Synthesizer";
+        }
     }
 }

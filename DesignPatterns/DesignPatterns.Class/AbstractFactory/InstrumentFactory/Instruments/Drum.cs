@@ -11,5 +11,10 @@ namespace DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments
         public Drum(string _model, string _type, int _price, int _elementNumber) : base(_model, _type, _price, _elementNumber)
         {
         }
+
+        public override string ToString()
+        {
+            return "Drum";
+        }
     }
 }

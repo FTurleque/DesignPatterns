@@ -27,7 +27,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Guitar.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -42,21 +42,21 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Bass.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Drum">
     <Position X="7.75" Y="12" Width="4.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Drum.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.AbstractFactory.InstrumentFactory.Instruments.Synthesizer">
     <Position X="14" Y="12" Width="4.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Synthesizer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -119,7 +119,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AbstractFactory\InstrumentFactory\Instruments\Piano.cs</FileName>
     </TypeIdentifier>
   </Class>
