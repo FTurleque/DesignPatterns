@@ -14,7 +14,7 @@ namespace DesignPatterns.Class.Decorator.Vehicule.VehiculesDecorator
 
         public override decimal DeterminatePrice()
         {
-            throw new NotImplementedException();
+            return Price + elementToDecorate.DeterminatePrice();
         }
     }
 }

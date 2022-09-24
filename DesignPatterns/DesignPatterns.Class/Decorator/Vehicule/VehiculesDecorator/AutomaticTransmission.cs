@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Decorator.Vehicule.VehiculesDecorator
 {
-    public class AutomaticTransmission : VehiculeDecorator
+    public class AutomaticTransmission : Sunroof
     {
         public AutomaticTransmission(IVehiculePart _elementToDecorate, decimal _price) : base(_elementToDecorate, _price)
         {
@@ -14,7 +14,7 @@ namespace DesignPatterns.Class.Decorator.Vehicule.VehiculesDecorator
 
         public override decimal DeterminatePrice()
         {
-            throw new NotImplementedException();
+            return Price + elementToDecorate.DeterminatePrice();
         }
     }
 }

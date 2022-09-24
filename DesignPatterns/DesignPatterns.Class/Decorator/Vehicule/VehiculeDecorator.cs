@@ -8,13 +8,13 @@ namespace DesignPatterns.Class.Decorator.Vehicule
 {
     public abstract class VehiculeDecorator : IVehiculePart
     {
-        private IVehiculePart elementToDecorate;
-        private decimal price;
+        protected IVehiculePart elementToDecorate;
+        public decimal Price { get; protected set; }
 
         protected VehiculeDecorator(IVehiculePart _elementToDecorate, decimal _price)
         {
             this.elementToDecorate = _elementToDecorate;
-            this.price = _price;
+            this.Price = _price;
         }
 
         public abstract decimal DeterminatePrice();
