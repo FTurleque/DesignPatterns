@@ -27,7 +27,7 @@ namespace DesignPatterns.Class.State.MediaVideo.VideoStates
 
         public override string ToString()
         {
-            return " ";
+            return "Arrêt.";
         }
     }
 }

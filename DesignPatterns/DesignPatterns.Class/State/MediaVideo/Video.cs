@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Class.State.VideoStates;
+﻿using DesignPatterns.Class.State.MediaVideo.VideoStates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
