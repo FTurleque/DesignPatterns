@@ -1,56 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="DesignPatterns.Class.Composite.Expression">
-    <Position X="3.5" Y="0.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAA=</HashCode>
-      <FileName>Composite\Expression.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="DesignPatterns.Class.Composite.Nombre">
-    <Position X="1" Y="2.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAEEAAAAEAAAAAAAAAAAACAAAAAFAAAAAAAA=</HashCode>
-      <FileName>Composite\Nombre.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="DesignPatterns.Class.Composite.Binaire.Addition">
-    <Position X="8.25" Y="4.75" Width="3" />
+    <Position X="8" Y="5.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEEAAAAEAAAAAAAAAAAAAAAAAAFAAAAAAAA=</HashCode>
-      <FileName>Composite\Binaire\Addition.cs</FileName>
+      <FileName>Composite\Calculation\Binaire\Addition.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DesignPatterns.Class.Composite.Binaire.Binaire">
     <Position X="5.75" Y="2.75" Width="3" />
-    <AssociationLine Name="op1" Type="DesignPatterns.Class.Composite.Expression" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="8.188" Y="2.75" />
-        <Point X="8.188" Y="1.34" />
-        <Point X="5.25" Y="1.34" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="op2" Type="DesignPatterns.Class.Composite.Expression" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="7.625" Y="2.75" />
-        <Point X="7.625" Y="1.792" />
-        <Point X="5.25" Y="1.792" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>Composite\Binaire\Binaire.cs</FileName>
+      <FileName>Composite\Calculation\Binaire\Binaire.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="op1" />
-      <Property Name="op2" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="DesignPatterns.Class.Composite.Binaire.Soustraction">
-    <Position X="3.25" Y="4.75" Width="3.25" />
+    <Position X="3.25" Y="5.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEEAAAAEAAAAAAAAAAAAAAAAAAFAAAAAAAA=</HashCode>
-      <FileName>Composite\Binaire\Soustraction.cs</FileName>
+      <FileName>Composite\Calculation\Binaire\Soustraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Calculation.Expression">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAA=</HashCode>
+      <FileName>Composite\Calculation\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Composite.Calculation.Nombre">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEEAAAAEAAAAAAAAAAAACAAAAAFAAAAAAAA=</HashCode>
+      <FileName>Composite\Calculation\Nombre.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
