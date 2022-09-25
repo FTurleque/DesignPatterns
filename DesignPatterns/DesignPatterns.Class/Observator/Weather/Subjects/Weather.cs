@@ -43,24 +43,28 @@ namespace DesignPatterns.Class.Observator.Weather.Subjects
         public void GetCloudy()
         {
             this.CurrentWeatherConditions = TheWeatherConditions.CLOUDY;
+            Warning = TheWeatherConditions.CLOUDY.ToString();
             Notify();
         }
 
         public void GetRainy()
         {
             this.CurrentWeatherConditions = TheWeatherConditions.RAINY;
+            Warning = TheWeatherConditions.RAINY.ToString(); ;
             Notify();
         }
 
         public void GetStormy()
         {
             this.CurrentWeatherConditions = TheWeatherConditions.STORMY;
+            Warning = TheWeatherConditions.STORMY.ToString();
             Notify();
         }
 
         public void GetBeautifull()
         {
             this.CurrentWeatherConditions = TheWeatherConditions.BEAUTIFUL;
+            Warning = TheWeatherConditions.BEAUTIFUL.ToString();
             Notify(); ;
         }
     }
