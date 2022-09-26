@@ -51,16 +51,6 @@ namespace DesignPatterns.Class.State.StateButton.States
             return this;
         }
 
-        public IStateButton DisplayPushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IStateButton ErasePushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
-        }
-
         public override string ToString()
         {
             return "Disable";

@@ -33,7 +33,17 @@ Console.WriteLine(video.ToString());
 
 video.PauseTheVideo();
 Console.WriteLine(video.ToString());
+Console.WriteLine("\n--------------------------------------------------\n");
 
 PushButton btn = new PushButton();
-Console.WriteLine(btn.ToString());
+Console.WriteLine("\n--------------------Enable------------------------------");
+btn.Enable();
+Console.WriteLine("\n--------------------Disable------------------------------");
+btn.Disable();
+Console.WriteLine("\n--------------------Press------------------------------");
+btn.Press();
+Console.WriteLine("\n--------------------Enable------------------------------");
+btn.Enable();
+Console.WriteLine("\n--------------------Press------------------------------");
+btn.Press();
 //btn.Display();

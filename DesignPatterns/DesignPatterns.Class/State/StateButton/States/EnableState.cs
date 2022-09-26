@@ -29,24 +29,15 @@ namespace DesignPatterns.Class.State.StateButton.States
             return this;
         }
 
-        public IStateButton DisplayPushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IStateButton ErasePushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
-        }
-
         public IStateButton PressPushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            return new Pushed();
         }
 
         public IStateButton ReleasePushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The button is removed.");
+            return this;
         }
 
         public override string ToString()

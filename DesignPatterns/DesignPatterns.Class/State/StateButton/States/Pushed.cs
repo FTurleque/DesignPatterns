@@ -1,31 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.Class.State.StateButton.States
+﻿namespace DesignPatterns.Class.State.StateButton.States
 {
     public class Pushed : IStateButton
     {
         public IStateButton DisablePushButton(PushButton ctx)
         {
-            throw new NotImplementedException();
-        }
-
-        public IStateButton DisplayPushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("This state is inaccessible.");
+            return this;
         }
 
         public IStateButton EnablePushButton(PushButton ctx)
         {
             return new EnableState();
-        }
-
-        public IStateButton ErasePushButton(PushButton ctx)
-        {
-            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -35,7 +20,6 @@ namespace DesignPatterns.Class.State.StateButton.States
         /// <returns>Retourne l'état du boutton</returns>
         public IStateButton PressPushButton(PushButton ctx)
         {
-            Console.WriteLine("The button is alredy pushed");
             return this;
         }
 
@@ -46,7 +30,7 @@ namespace DesignPatterns.Class.State.StateButton.States
         /// <returns>Retourne l'état du boutton</returns>
         public IStateButton ReleasePushButton(PushButton ctx)
         {
-            return new Released();
+            return new EnableState();
         }
 
         public override string ToString()

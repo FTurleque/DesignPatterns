@@ -19,31 +19,38 @@ namespace DesignPatterns.Class.State.StateButton
         public void Display()
         {
             currentStateButton = new EnableState();
+            Console.WriteLine("The button is display.");
+            Console.WriteLine(currentStateButton.ToString());
         }
 
         public void Press()
         {
-            throw new System.NotImplementedException();
+            currentStateButton = currentStateButton.PressPushButton(this);
+            Console.WriteLine(currentStateButton.ToString());
+            Release();
         }
 
         public void Release()
         {
-            throw new System.NotImplementedException();
+            currentStateButton = currentStateButton.ReleasePushButton(this);
+            Console.WriteLine(currentStateButton.ToString());
         }
 
         public void Disable()
         {
-            throw new System.NotImplementedException();
+            currentStateButton = currentStateButton.DisablePushButton(this);
+            Console.WriteLine(currentStateButton.ToString());
         }
 
         public void Enable()
         {
-            throw new System.NotImplementedException();
+            currentStateButton = currentStateButton.EnablePushButton(this);
+            Console.WriteLine(currentStateButton.ToString());
         }
 
         public void Erase()
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine("The button is erease.");
         }
     }
 }
