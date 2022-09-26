@@ -14,7 +14,7 @@ Thread Thread = new Thread(() =>
 	{
 		for (int i = 20; i >= 0; i--)
 		{
-			Thread.Sleep(1000);
+			Thread.Sleep(3000);
 			var t = weather.GetWeatherConditions(i);
 			Console.WriteLine("\n" + i);
 			Console.WriteLine("\n__________________________________________________________________________________________");

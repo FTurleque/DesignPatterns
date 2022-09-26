@@ -19,7 +19,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.WeatherStation">
-    <Position X="10.75" Y="7" Width="3.25" />
+    <Position X="8.75" Y="3.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Observers\WeatherStation.cs</FileName>
@@ -27,7 +27,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Person">
-    <Position X="6.25" Y="5" Width="3.75" />
+    <Position X="5.75" Y="5.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAQAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Observator\Weather\Observers\Person.cs</FileName>
@@ -35,7 +35,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Phone">
-    <Position X="10.75" Y="4" Width="3.25" />
+    <Position X="10.25" Y="6" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Observers\Phone.cs</FileName>

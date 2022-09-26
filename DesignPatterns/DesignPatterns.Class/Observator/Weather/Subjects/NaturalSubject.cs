@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Observator.Weather.Subjects
 {
-    public abstract class NaturalSubject : INaturalSubject
+    public  class NaturalSubject : INaturalSubject
     {
         protected List<INaturalObserver> naturalObserverList;
 
