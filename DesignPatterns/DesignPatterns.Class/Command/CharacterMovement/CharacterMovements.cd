@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="DesignPatterns.Class.Command.CharacterMovement.CommandForMouse">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Position X="6" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
       <FileName>Command\CharacterMovement\CommandForMouse.cs</FileName>
@@ -30,6 +30,12 @@
   </Class>
   <Class Name="DesignPatterns.Class.Commande.CharacterMovement.Moves.CommandBackOff">
     <Position X="5.25" Y="5.25" Width="2.75" />
+    <InheritanceLine Type="DesignPatterns.Class.Command.CharacterMovement.CommandForMouse" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="3.796" />
+        <Point X="6.75" Y="5.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAEQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Command\CharacterMovement\Moves\CommandBackOff.cs</FileName>
