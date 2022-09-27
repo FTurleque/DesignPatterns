@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Commande.CharacterMovement.Moves
 {
-    public class CommandGoTo : CommandForMouse
+    public class CommandGoTo : Command.CharacterMovement.Command
     {
         private int stepNumber;
 

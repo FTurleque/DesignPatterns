@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Command.CharacterMovement
 {
-    public abstract class CommandForMouse : ICommand
+    public abstract class Command : ICommand
     {
-        private ReceiverMice receiver;
+        protected ReceiverMice receiver;
+
+        protected Command(ReceiverMice _receiver)
+        {
+            this.receiver = _receiver;
+        }
 
         public abstract void Cancel();
 

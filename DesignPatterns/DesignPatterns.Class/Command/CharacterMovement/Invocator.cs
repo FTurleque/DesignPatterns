@@ -10,14 +10,15 @@ namespace DesignPatterns.Class.Command.CharacterMovement
     {
         private List<ICommand> ICommand;
 
-        public void CommandToExecute(ICommand command)
+        public void CommandToExecute(ICommand _command)
         {
-
+            ICommand.Add(_command);
+            _command.Execute();
         }
 
-        public void CancelLastCommand(ICommand command)
+        public void CancelLastCommand(ICommand _command)
         {
-
+            ICommand.Remove(_command);
         }
     }
 }

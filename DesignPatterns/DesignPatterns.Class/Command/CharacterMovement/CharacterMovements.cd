@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="DesignPatterns.Class.Command.CharacterMovement.CommandForMouse">
-    <Position X="6" Y="2.5" Width="1.5" />
+  <Class Name="DesignPatterns.Class.Command.CharacterMovement.Command">
+    <Position X="5.5" Y="2.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Command\CharacterMovement\CommandForMouse.cs</FileName>
+      <FileName>Command\CharacterMovement\Command.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="receiver" />
@@ -12,9 +12,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Command.CharacterMovement.ReceiverMice">
-    <Position X="0.75" Y="2.75" Width="1.5" />
+    <Position X="0.75" Y="2.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Command\CharacterMovement\ReceiverMice.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -28,31 +28,32 @@
       <Field Name="ICommand" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="DesignPatterns.Class.Commande.CharacterMovement.Moves.CommandBackOff">
-    <Position X="5.25" Y="5.25" Width="2.75" />
-    <InheritanceLine Type="DesignPatterns.Class.Command.CharacterMovement.CommandForMouse" FixedToPoint="true">
-      <Path>
-        <Point X="6.75" Y="3.796" />
-        <Point X="6.75" Y="5.25" />
-      </Path>
-    </InheritanceLine>
+  <Class Name="DesignPatterns.Class.Command.CharacterMovement.Moves.North">
+    <Position X="4.25" Y="5.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\CharacterMovement\Moves\CommandBackOff.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\CharacterMovement\Moves\North.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns.Class.Commande.CharacterMovement.Moves.CommandGoTo">
-    <Position X="8.75" Y="5.25" Width="2.5" />
+  <Class Name="DesignPatterns.Class.Command.CharacterMovement.Moves.South">
+    <Position X="7" Y="5.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Command\CharacterMovement\Moves\CommandGoTo.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\CharacterMovement\Moves\South.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DesignPatterns.Class.Commande.CharacterMovement.Moves.CommandTurnRight">
-    <Position X="1.5" Y="5.25" Width="2.75" />
+  <Class Name="DesignPatterns.Class.Command.CharacterMovement.Moves.East">
+    <Position X="1.5" Y="5.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
-      <FileName>Command\CharacterMovement\Moves\CommandTurnRight.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\CharacterMovement\Moves\East.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Class.Command.CharacterMovement.Moves.West">
+    <Position X="9.75" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\CharacterMovement\Moves\West.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="DesignPatterns.Class.Command.CharacterMovement.ICommand">

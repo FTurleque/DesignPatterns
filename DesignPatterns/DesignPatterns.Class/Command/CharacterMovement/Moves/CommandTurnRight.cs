@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Commande.CharacterMovement.Moves
 {
-    public class CommandTurnRight : CommandForMouse
+    public class CommandTurnRight : Command.CharacterMovement.Command
     {
         private double angle;
 
