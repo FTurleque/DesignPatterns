@@ -35,7 +35,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Class.Observator.Weather.Observers.Phone">
-    <Position X="10.25" Y="6" Width="3.25" />
+    <Position X="10.25" Y="5.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Observator\Weather\Observers\Phone.cs</FileName>
