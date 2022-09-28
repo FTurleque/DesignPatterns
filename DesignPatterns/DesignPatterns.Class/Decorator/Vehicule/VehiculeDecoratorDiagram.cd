@@ -39,20 +39,10 @@
   </Class>
   <Class Name="DesignPatterns.Class.Decorator.Vehicule.VehiculeDecorator">
     <Position X="4.25" Y="1.75" Width="4.5" />
-    <AssociationLine Name="elementToDecorate" Type="DesignPatterns.Class.Decorator.Vehicule.IVehiculePart" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="7.174" Y="1.75" />
-        <Point X="7.174" Y="0.875" />
-        <Point X="3.5" Y="0.875" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAEAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Decorator\Vehicule\VehiculeDecorator.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="elementToDecorate" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="DesignPatterns.Class.Decorator.Vehicule.IVehiculePart">

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Class.Decorator.Vehicule.VehiculesDecorator
 {
-    public class AutomaticTransmission : Sunroof
+    public class AutomaticTransmission : VehiculeDecorator
     {
         public AutomaticTransmission(IVehiculePart _elementToDecorate, decimal _price) : base(_elementToDecorate, _price)
         {
